@@ -1,0 +1,4 @@
+<Context
+  path ="/algorithm"  docBase ="D:\workspase\HadoopAlgorithm2.0\WebRoot"  
+  privileged ="true"  reloadable ="false"  >  
+</Context>

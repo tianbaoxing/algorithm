@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <!-- Add packages here -->
+    
+    <constant name="struts.devMode" value="true" />
+	
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <package name="actions" extends="struts-default" namespace="/" >
+
+ <!-- 配置setup action -->
+		<action name="Setup" class="org.fz.action.SetupAction">
+        	<result name="success">/setup/setup.jsp</result>
+        </action>
+        <!-- hadoop read  -->
+         <action name="HadoopRead" class="org.fz.action.HadoopReadAction">
+        	<result name="success">/hadoopio/hadoop_read.jsp </result>
+        </action>
+        <!-- hadoop write  -->
+         <action name="HadoopWrite" class="org.fz.action.HadoopWriteAction">
+        	<result name="success">/hadoopio/hadoop_write.jsp </result>
+        </action>
+        
+         <!-- hadoop upload  -->
+         <action name="HadoopUpload" class="org.fz.action.HadoopUploadAction">
+        	<result name="success">/hadoopio/hadoop_upload.jsp </result>
+        </action>
+        
+         <!-- hadoop download  -->
+         <action name="HadoopDownload" class="org.fz.action.HadoopDownloadAction">
+        	<result name="success">/hadoopio/hadoop_download.jsp </result>
+        </action>
+        
+        <!-- hadoop sequential file read  -->
+         <action name="HadoopSeqRead" class="org.fz.action.HadoopSeqReadAction">
+        	<result name="success">/hadoopmr/hadoop_sequence_read.jsp </result>
+        </action>
+        <!-- hadoop sequential file to text file   -->
+         <action name="HadoopSeq2Txt" class="org.fz.action.HadoopSeq2TxtAction">
+        	<result name="success">/hadoopmr/hadoop_seq2txt.jsp </result>
+        </action>
+        
+		<!-- 配置中间转换的action -->
+		<action name="transform" class="org.fz.action.TransformAction">
+        	<result name="success">/monitor/monitoring.jsp </result>
+        	<result name="error">/monitor/error.jsp </result>
+        </action>
+     	<action name="*_" class="org.fz.action.{1}Action">
+        	<result name="success" type="chain">transform</result>
+        	<result name="initial">/setup/setup.jsp</result>
+        </action>
+     	
+    </package>
+    
+</struts>

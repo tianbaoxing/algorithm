@@ -1,0 +1,16 @@
+#Fri Jan 03 00:06:56 CST 2014
+eclipse.preferences.version=1
+encoding//WebRoot/hadoopio/hadoop_download.jsp=UTF-8
+encoding//WebRoot/hadoopio/hadoop_read.jsp=UTF-8
+encoding//WebRoot/hadoopio/hadoop_upload.jsp=UTF-8
+encoding//WebRoot/hadoopio/hadoop_write.jsp=UTF-8
+encoding//WebRoot/hadoopmr/hadoop_seq2txt.jsp=UTF-8
+encoding//WebRoot/hadoopmr/hadoop_sequence_read.jsp=UTF-8
+encoding//WebRoot/mahout/canopy.jsp=UTF-8
+encoding//WebRoot/mahout/collaborative.jsp=UTF-8
+encoding//WebRoot/mahout/kmeans.jsp=UTF-8
+encoding//WebRoot/monitor/monitoring.jsp=UTF-8
+encoding//WebRoot/setup/setup.jsp=UTF-8
+encoding//src/org/fz/action/TransformAction.java=UTF-8
+encoding//src/util/MonitorUtil.java=UTF-8
+encoding/<project>=UTF-8

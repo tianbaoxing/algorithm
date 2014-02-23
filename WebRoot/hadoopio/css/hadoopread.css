@@ -1,0 +1,33 @@
+.form-input{
+	font-size: 18px;
+	padding: 4px 8px;
+	width: 450px;
+	margin-right: 20px;
+}
+
+form .btn{
+	display: inline-block;
+	width: 100px;
+}
+
+#file-info{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+form div{
+	margin-bottom: 15px;
+}
+
+form div p{
+	width: 600px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+textarea{
+	min-width: 600px;
+	min-height: 250px;
+	max-width: 600px;
+	max-height: 250px;
+}

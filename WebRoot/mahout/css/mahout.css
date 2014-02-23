@@ -1,0 +1,45 @@
+form label{
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+
+form div{
+	margin-bottom: 10px;
+}
+
+.form-input{
+	width: 300px;
+	font-size: 16px;
+}
+
+
+#cuttingline{
+	border-bottom: 1px solid #CCC;
+	text-align: center;
+	width: 700px;
+	margin: 10px 0px 20px 0px;
+	position: relative;
+}
+
+#cuttingline span{
+	position: relative;
+	top: 8px; right: 15px;
+	background-color: white;
+	padding: 0px 6px;
+	color: #999;
+}
+
+#btn-group{
+	margin-top: 30px;
+	width: 550px;
+	padding-left: 60px;
+	text-align: right;
+}
+
+.btn{
+	display: inline-block;
+	width: 100px;
+	margin-right: 50px;
+}
+
